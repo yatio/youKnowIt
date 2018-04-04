@@ -1,3 +1,6 @@
 ThinkPill/node_modules/*
 ThinkPill/platforms/*
 ThinkPill/app/*
+ThinkPill\app\*
+ThinkPill\app\
+ThinkPill\app
