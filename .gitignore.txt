@@ -1,2 +1,3 @@
-ThinkPill/node_modules/
-ThinkPill/platforms/
+ThinkPill/node_modules/*
+ThinkPill/platforms/*
+ThinkPill/app/*
