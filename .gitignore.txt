@@ -1,5 +1,2 @@
-youKnowIt/ThinkPill/node_modules/
-ThinkPill/node_modules/*
-ThinkPill/*
-node_modules/*
-platforms/
+ThinkPill/node_modules/
+ThinkPill/platforms/
