@@ -1,0 +1,29 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
+  <TabView>
+    <TabView.items>
+      <TabViewItem title="About">
+        <TabViewItem.view>
+          <ScrollView>
+            <StackLayout class="tab-content">
+              <Image margin="10" src="~/res/telerik-logo.png" />
+              <Label text="Local Notifications plugin demo" class="title"/>
+              <Label text="The Local Notifications plugin allows your app to show notifications when the app is not running. Just like remote push notifications, but a few orders of magnitude easier to set up." textWrap="true"/>
+            </StackLayout>
+          </ScrollView>
+        </TabViewItem.view>
+      </TabViewItem>
+      <TabViewItem title="Demo">
+        <TabViewItem.view>
+				<calendar:RadCalendar id="myCalendar" 
+				dateSelected="onDateSelected"
+				eventSource="{{ events }}" 
+				/>  
+        </TabViewItem.view>
+      </TabViewItem>
+    </TabView.items>
+  </TabView>
+	
+	<!--
+	eventsViewMode="Inline" viewMode="Month" transitionMode="Stack"
+	-->
+</Page>

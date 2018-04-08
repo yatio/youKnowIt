@@ -1,0 +1,32 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="Menu" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+
+
+    <StackLayout orientation="Vertical" >
+
+      <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" />
+      <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" />
+
+    <StackLayout orientation="Horizontal" horizontalAlignment="center">
+        <Button text="Pastillas" style="width:150;height:100; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
+        <Button text="Mapa"   style="width:150;height:100; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+    </StackLayout>
+
+    <StackLayout orientation="Horizontal" horizontalAlignment="center">
+          <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+          <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/>
+   </StackLayout>
+
+
+</StackLayout>
+
+<!--</StackLayout>-->
+
+
+</Page>
