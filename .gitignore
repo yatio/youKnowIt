@@ -1,3 +1,5 @@
 #NativeScript
 platforms/
 node_modules/
+.DS_Store
+ThinkPill\.DS_Store
