@@ -1,4 +1,5 @@
-ThinkPill-
+ThinkPill - Leilanie y Yadiel
+plugins que se han usado(entre otras cosas por siaca alguna otra idea en el futuro)
 tns plugin add nativescript-ui-calendar
 tns plugin add nativescript-local-notifications
 
