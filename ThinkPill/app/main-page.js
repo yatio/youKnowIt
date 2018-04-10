@@ -80,6 +80,17 @@ exports.citaPage=function() {
     
     frameModule.topmost().navigate(navigationOptions);
 }
+exports.addCita=function() {
+    // console.log("Navigating");
+    var navigationOptions={
+        moduleName:'pages/addCita/addCita'//,
+        // context:{param1: "value1",
+        //         param2: "value2"
+        //         }
+    }
+    
+    frameModule.topmost().navigate(navigationOptions);
+}
 exports.infoPage=function() {
     // console.log("Navigating");
     var navigationOptions={

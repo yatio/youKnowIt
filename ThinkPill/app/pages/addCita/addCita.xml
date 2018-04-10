@@ -7,9 +7,9 @@
         <StackLayout orientation="horizontal">
             <Button text="Schedule" tap="{{ schedule }}" />
         </StackLayout> -->
-
-          <TextField id="dia" hint="First Name" text="{{ dia }}" />
-        <TextField id="lastname" hint="Last Name" text="{{ mes }}" />
+        <TextField id="titulo" hint="Titulo" text="{{ titulo }}" />
+        <TextField id="dia" hint="Dia" text="{{ dia }}" />
+        <TextField id="lastname" hint="Mes" text="{{ mes }}" />
         <TextField id="year" hint="Año" text="{{ year }}" />
         <StackLayout orientation="horizontal">
             <Button text="Insert" tap="{{ insert }}" />

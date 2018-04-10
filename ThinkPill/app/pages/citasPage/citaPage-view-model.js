@@ -1,42 +1,34 @@
 var Observable = require("data/observable").Observable;
-var LocalNotifications = require("nativescript-local-notifications");
 var dialogs = require("ui/dialogs");
+//sql
 
-function doAddOnMessageReceivedCallback() {
-    LocalNotifications.addOnMessageReceivedCallback(
-        function(notificationData) {
-            dialogs.alert({
-                title: "Notification received",
-                message: "ID: " + notificationData.id +
-                "\nTitle: " + notificationData.title +
-                "\nBody: " + notificationData.body,
-                okButtonText: "Excellent!"
-            });
-        }
-    );
-}
+var Observable = require("data/observable").Observable;
+var Sqlite = require("nativescript-sqlite");
 
-function createViewModel() {
+function createViewModel(database) {
     var viewModel = new Observable();
+    viewModel.dia = "";
+    viewModel.mes = "";
+    viewModel.year = "";
 
-    viewModel.id = 0;
-    viewModel.title = "Titulo";
-    viewModel.body = "Texto";
-    viewModel.ticker = "Ticker";
+    viewModel.insert = function() {
+        database.execSQL("INSERT INTO Citas (dia, mes, year) VALUES (? , ? , ?);", [this.dia, this.mes, this.year]).then(id => { 
+            console.log("INSERT RESULT", id);
+            console.log("INSERT RESULT", this.dia);
+            console.log("INSERT RESULT", this.mes);
+            console.log("INSERT RESULT", this.year);
+        }, error => {
+            console.log("INSERT ERROR", error);
+        });
+    }
 
-    doAddOnMessageReceivedCallback();
-
-    viewModel.schedule = function() {
-        LocalNotifications.schedule([{
-            id: this.id,
-            title: this.title,
-            body: this.body,
-            ticker: this.ticker,
-            at: new Date(new Date().getTime() + (10 * 1000))
-        }]).then(() => {
-            console.log("Notification scheduled");
-        }, (error) => {
-            console.log("ERROR", error);
+    viewModel.select = function() {
+        database.all("SELECT * FROM Citas").then(rows => {
+            for(var row in rows) {
+                console.log("RESULT", rows[row]);
+            }
+        }, error => {
+            console.log("SELECT ERROR", error);
         });
     }
 

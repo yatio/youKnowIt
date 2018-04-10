@@ -1,0 +1,11 @@
+#NativeScript
+platforms/
+lib/
+frameworks/
+/samples/app/tns_modules
+/samples/lib
+libs/
+temp/
+.settings/
+node_modules/
+*.js

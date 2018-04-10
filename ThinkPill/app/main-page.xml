@@ -13,18 +13,20 @@
       <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" />
       <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" />
 
-    <StackLayout orientation="Horizontal" horizontalAlignment="center">
-        <Button text="Pastillas" style="width:150;height:100; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
-        <Button text="Mapa"   style="width:150;height:100; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+        <StackLayout orientation="Horizontal" horizontalAlignment="center">
+            <Button text="Pastillas" style="width:150;height:100; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
+            <Button text="Mapa"   style="width:150;height:100; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+        </StackLayout>
+
+        <StackLayout orientation="Horizontal" horizontalAlignment="center">
+            <StackLayout orientation="Horizontal" horizontalAlignment="center">
+                <Button text="Citas" style="width:75;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+                <Button text="Add" style="width:75;height:100; background-color: #3498DB" class="btn btn-primary" tap="addCita"/>
+            </StackLayout>
+                <!-- <Button text="addCita" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="addCita"/> -->
+                <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
+        </StackLayout>
     </StackLayout>
-
-    <StackLayout orientation="Horizontal" horizontalAlignment="center">
-          <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
-          <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/>
-   </StackLayout>
-
-
-</StackLayout>
 
 <!--</StackLayout>-->
 
