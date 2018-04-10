@@ -65,10 +65,10 @@ function createViewModel(database) {
         console.log("Entro aqui por lomenos");
             var mes = this.mes;
             console.log("MESES: " + mes);
-            if (mes= '0')
+            if (mes = 0) 
                 mes = 0;
             else
-                mes -= 1;
+                mes =mes - 1;
         database.execSQL("INSERT INTO Citas (titulo, dia, mes, year, hora, minutos) VALUES (?, ?, ?, ?, ?, ?)", [this.titulo ,this.dia, mes, this.year, this.hora, this.minutos ]).then(id => { 
             console.log("INSERT RESULT", id);
         }, error => {

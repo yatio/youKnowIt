@@ -10,7 +10,7 @@
         <TextField id="titulo" hint="Titulo" text="{{ titulo }}" />
         <TextField id="dia" hint="Dia" text="{{ dia }}" />
         <TextField id="lastname" hint="Mes" text="{{ mes }}" />
-        <TextField id="year" hint="Año" text="{{ year }}" />
+        <TextField id="year" hint="Año" text="{{ year }}" /> 
         <TextField id="hora" hint="Hora" text="{{ hora }}" />
         <TextField id="minutos" hint="Minutos" text="{{ minutos }}" />
         <StackLayout orientation="horizontal">
