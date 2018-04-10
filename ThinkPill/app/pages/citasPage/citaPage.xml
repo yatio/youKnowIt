@@ -29,10 +29,14 @@
       </TabViewItem>
       <TabViewItem title="Demo">
         <TabViewItem.view> -->
-				<calendar:RadCalendar id="myCalendar" 
-				dateSelected="onDateSelected"
-				eventSource="{{ events }}" 
-				/>  
+						<ActionBar title="App Icon Demo">
+						<NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+										<calendar:RadCalendar id="myCalendar" 
+										dateSelected="onDateSelected"
+										eventSource="{{ events }}" 
+										/> 
+						</ActionBar>
+ 
         <!-- </TabViewItem.view>
       </TabViewItem>
     </TabView.items>
