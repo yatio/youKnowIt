@@ -1,45 +1,4 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded" navigatingTo="onNavigatingTo">
-  <!-- <TabView>
-    <TabView.items>
-      <TabViewItem title="About">
-        <TabViewItem.view>
-          <ScrollView>
-            <StackLayout class="tab-content">
-				<StackLayout>
-						<TextField id="id" hint="Numeric ID" text="{{ id }}" />cambiar luego a id que se genere solo quisas en array o base de datos or something (archivo quisas) 
-						<TextField id="title" hint="title" text="{{ title }}" />
-						<TextView id="body" hint="body" text="{{ body }}" />
-						<TextView id="ticker" hint="ticker" text="{{ ticker }}" />
-					<StackLayout orientation="horizontal">
-						<Button text="Schedule" tap="{{ schedule }}" />
-					</StackLayout>
-				</StackLayout> -->
-				<!-- <StackLayout>
-					<TextField id="dia" hint="Dia" text="{{ dia }}" />
-						<TextField id="mes" hint="Mes" text="{{ mes }}" />
-						<TextField id="year" hint="Año" text="{{ year }}" />
-					<StackLayout orientation="horizontal">
-						<Button text="Insert" tap="{{ insert }}" />
-						<Button text="Select" tap="{{ select }}" />
-					</StackLayout>
-				</StackLayout> -->
-            <!-- </StackLayout>
-          </ScrollView>
-        </TabViewItem.view>
-      </TabViewItem>
-      <TabViewItem title="Demo">
-        <TabViewItem.view> -->
-				<calendar:RadCalendar id="myCalendar" 
-				dateSelected="onDateSelected"
-				eventSource="{{ events }}" 
-				/>  
-        <!-- </TabViewItem.view>
-      </TabViewItem>
-    </TabView.items>
-  </TabView>
-	 -->
-
-	<!--
-	eventsViewMode="Inline" viewMode="Month" transitionMode="Stack"
-	-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
+    <ActionBar title="Citas Medicas" class="action-bar" />
+    <calendar:RadCalendar id="myCalendar" eventSource="{{ events }}" />
 </Page>

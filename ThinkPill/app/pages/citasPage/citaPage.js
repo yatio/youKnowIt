@@ -178,3 +178,9 @@ function onNavigatingTo(args) {
 }
 
 exports.onNavigatingTo = onNavigatingTo;
+
+function onNavBtnTap() {
+    // This code will be called only in Android.
+    console.log("Navigation button tapped!");
+}
+exports.onNavBtnTap = onNavBtnTap;
