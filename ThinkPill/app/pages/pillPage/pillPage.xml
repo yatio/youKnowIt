@@ -8,7 +8,7 @@
 
 
 
-    <sd:RadSideDrawer id="sideDrawer" drawerTransition="PushTransition">
+    <sd:RadSideDrawer id="sideDrawer" drawerLocation="right" drawerTransition="RevealTransition">
 
         <!-- side drawer content -->
         <sd:RadSideDrawer.drawerContent>
@@ -35,6 +35,8 @@
     </sd:RadSideDrawer>
 
 </Page> 
+
+
 
 
 
