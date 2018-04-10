@@ -62,11 +62,11 @@ exports.pageLoaded = function(args) {
 				events.push(event);
 				// console.log("events: " + events[0][1] + " " + events[1][1]);
 				console.log("termino?");
-						var birthday = new Date('April 18, 2018 16:23:18');// se a~ade 4 veces para ver si salen las 4 pruebas :D
-						var event = new calendarModule.CalendarEvent("Birthday", birthday, birthday);
-						console.log("birthday " + birthday);//segundos
-						events.push(event);
-						// pageData.set("events", events);
+						// var birthday = new Date('April 18, 2018 16:23:18');// se a~ade 4 veces para ver si salen las 4 pruebas :D
+						// var event = new calendarModule.CalendarEvent("Birthday", birthday, birthday);
+						// console.log("birthday " + birthday);//segundos
+						// events.push(event);
+						// // pageData.set("events", events);
 			}
 			pageData.set("events", events);
 		});
