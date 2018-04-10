@@ -50,8 +50,12 @@ exports.pageLoaded = function(args) {
 				console.log("mes: ", rows[row][3]);
 				var month = rows[row][3];
 				// console.log("month " + month);
-				console.log("RESULT", rows[row][4]);
+				console.log("year", rows[row][4]);
 				var year = rows[row][4];
+				console.log("hora", rows[row][5]);
+				var hora = rows[row][5];
+				console.log("minutos", rows[row][6]);
+				var minutos = rows[row][6];
 				// console.log("year " + year);
 				// var startDate = new Date(now.getFullYear(), now.getMonth(), j * 2, 12);
 				// console.log("DATE: " + startDate);
@@ -105,47 +109,47 @@ exports.pageLoaded = function(args) {
 	// pageData.set("events", events);
 	
 	}
-	function addEvents(args){
-    var page = args.object;
+	// function addEvents(args){
+    // var page = args.object;
     
 	
 
 
-		page = args.object;
-		page.bindingContext = pageData;
+	// 	page = args.object;
+	// 	page.bindingContext = pageData;
 
-		var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
-		var events = [];
+	// 	var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
+	// 	var events = [];
 
-		var j = 1;
-		for (var i = 0; i < eventTitles.length; i++) {
-			var now = new Date();
-			// console.log("Chequiando cosas ");
-			// console.log("now " + now);//todo
-			// console.log("getDay " + now.getDay());//numero del dia de la semana
-			// console.log("getSeconds " + now.getMonth());//mes
-			// console.log("getDate " + now.getDate());//dia
-			// console.log("getFullYear " + now.getFullYear());//año
-			// console.log("getHours " + now.getHours());//hora
-			// console.log("getMinutes " + now.getMinutes());//minutos
-			// console.log("getSeconds " + now.getSeconds());//segundos
-			var birthday = new Date('April 14, 2018');
-			var startDate = new Date(now.getFullYear(), now.getMonth(), j * 2, 12);
-			var endDate = new Date(now.getFullYear(), now.getMonth(), (j * 2) + (j % 3), 13);
-			var event = new calendarModule.CalendarEvent(eventTitles[i], startDate, endDate);
-			events.push(event);
-			j++;
-		}
-		var birthday1 = new Date('April 14, 2018');
-		var event = new calendarModule.CalendarEvent("Birthday", birthday1, birthday1,true);
-		console.log("birthday " + birthday1);//segundos
-		events.push(event);
-		var birthday = new Date('April 18, 2018 16:23:18');
-		var event = new calendarModule.CalendarEvent("Birthday", birthday, birthday);
-		console.log("birthday " + birthday);//segundos
-		events.push(event);
-		pageData.set("events", events);
-	}
+	// 	var j = 1;
+	// 	for (var i = 0; i < eventTitles.length; i++) {
+	// 		var now = new Date();
+	// 		// console.log("Chequiando cosas ");
+	// 		// console.log("now " + now);//todo
+	// 		// console.log("getDay " + now.getDay());//numero del dia de la semana
+	// 		// console.log("getSeconds " + now.getMonth());//mes
+	// 		// console.log("getDate " + now.getDate());//dia
+	// 		// console.log("getFullYear " + now.getFullYear());//año
+	// 		// console.log("getHours " + now.getHours());//hora
+	// 		// console.log("getMinutes " + now.getMinutes());//minutos
+	// 		// console.log("getSeconds " + now.getSeconds());//segundos
+	// 		var birthday = new Date('April 14, 2018');
+	// 		var startDate = new Date(now.getFullYear(), now.getMonth(), j * 2, 12);
+	// 		var endDate = new Date(now.getFullYear(), now.getMonth(), (j * 2) + (j % 3), 13);
+	// 		var event = new calendarModule.CalendarEvent(eventTitles[i], startDate, endDate);
+	// 		events.push(event);
+	// 		j++;
+	// 	}
+	// 	var birthday1 = new Date('April 14, 2018');
+	// 	var event = new calendarModule.CalendarEvent("Birthday", birthday1, birthday1,true);
+	// 	console.log("birthday " + birthday1);//segundos
+	// 	events.push(event);
+	// 	var birthday = new Date('April 18, 2018 16:23:18');
+	// 	var event = new calendarModule.CalendarEvent("Birthday", birthday, birthday);
+	// 	console.log("birthday " + birthday);//segundos
+	// 	events.push(event);
+	// 	pageData.set("events", events);
+	// }
 
 
 

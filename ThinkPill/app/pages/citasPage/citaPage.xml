@@ -1,6 +1,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
+<<<<<<< HEAD
   <ActionBar title="Citas Medicas" class="action-bar" />
     <calendar:RadCalendar id="myCalendar" eventSource="{{ events }}" eventsViewMode="Inline"/>
     
+=======
+    <ActionBar title="Citas Medicas" class="action-bar" />
+    <calendar:RadCalendar id="myCalendar" eventSource="{{ events }}" eventsViewMode="Inline" />
+>>>>>>> 772d4393469465a389f6a1bd7896d9e763c603ff
 </Page>
 
