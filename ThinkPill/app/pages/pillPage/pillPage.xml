@@ -20,7 +20,7 @@
                     <Label text="Añadir Citas" class="sidedrawer-list-item-text" />
                     <Label text="Borrar Citas" class="sidedrawer-list-item-text" />
                     <Label text="Editar Citas" class="sidedrawer-list-item-text" />
-                    <Label text="Regresar" class="sidedrawer-list-item-text" />
+                    <Label text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" />
                 </StackLayout>
             </StackLayout>
         </sd:RadSideDrawer.drawerContent>

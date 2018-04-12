@@ -56,11 +56,16 @@ exports.pageLoaded = function(args) {
 				var hora = rows[row][5];
 				console.log("minutos", rows[row][6]);
 				var minutos = rows[row][6];
+				//aqui iria si la hora es PM o AM
+				var date = month + " " + day + ", " + year + " " + hora + ":" + minutos + ":00" ;
+				var dates = "April 18, 2018 16:23:18";
 				// console.log("year " + year);
 				// var startDate = new Date(now.getFullYear(), now.getMonth(), j * 2, 12);
 				// console.log("DATE: " + startDate);
-				var startDate = new Date(year, month, day);
+				// var startDate = new Date(year, month, day, hora, minutos);
+				var startDate = new Date(date);
 				console.log("DATE: " + startDate);
+				var endDate = new Date(year, month, day);
 				var event = new calendarModule.CalendarEvent(titulo, startDate, startDate);
 				console.log("event: " + event.title + " " + event.startDate);
 				events.push(event);
