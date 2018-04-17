@@ -8,7 +8,7 @@
 
 
 
-    <sd:RadSideDrawer id="sideDrawer" drawerLocation="right" drawerTransition="RevealTransition">
+    <sd:RadSideDrawer id="sideDrawer" drawerLocation="left" drawerTransition="RevealTransition">
 
         <!-- side drawer content -->
         <sd:RadSideDrawer.drawerContent>

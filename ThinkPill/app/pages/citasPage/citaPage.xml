@@ -1,7 +1,36 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
 
-    <ActionBar title="Citas Medicas" class="action-bar" />
-    <calendar:RadCalendar id="myCalendar" eventSource="{{ events }}" eventsViewMode="Inline" />
+<ActionBar title="RadSideDrawer Demo" class="action-bar">
+    <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_preferences" ios.position="left" />
+</ActionBar>
+
+    <sd:RadSideDrawer id="sideDrawer" drawerLocation="right" drawerTransition="RevealTransition">
+
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label text="Ajustes" class="sidedrawer-header-brand" /> 
+                </StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <Label text="Añadir Citas" class="sidedrawer-list-item-text" />
+                    <Label text="Borrar Citas" class="sidedrawer-list-item-text" />
+                    <Label text="Editar Citas" class="sidedrawer-list-item-text" />
+                    <Label text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" />
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+
+        <!-- The main content -->
+        <sd:RadSideDrawer.mainContent>
+             <StackLayout>
+                <calendar:RadCalendar id="myCalendar" eventSource="{{ events }}" eventsViewMode="Inline" />
+                <!-- <Button text="Toggle Drawer" class="btn btn-primary" tap="toggleDrawer" /> -->
+            </StackLayout>
+        </sd:RadSideDrawer.mainContent>
+
+    </sd:RadSideDrawer>
+        
 
 </Page>
 

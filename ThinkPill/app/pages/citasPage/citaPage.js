@@ -17,6 +17,12 @@
 // }
 // exports.onNavigatingTo = onNavigatingTo;
 
+var view = require("ui/core/view");
+var drawer;
+
+exports.toggleDrawer = function() {
+    drawer.toggleDrawerState();
+};
 var Observable = require("data/observable").Observable;
 var calendarModule = require("nativescript-ui-calendar");
 
@@ -29,6 +35,7 @@ exports.onDateSelected = onDateSelected;
 	
 exports.pageLoaded = function(args) {
 	page = args.object;
+	drawer = view.getViewById(page, "sideDrawer");
 	page.bindingContext = pageData;
 	// var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
 	var events = [];
