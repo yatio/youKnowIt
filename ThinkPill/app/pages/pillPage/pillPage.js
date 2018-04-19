@@ -56,3 +56,4 @@ exports.pageLoaded = function(args) {
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
+
