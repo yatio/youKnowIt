@@ -28,7 +28,7 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .action-bar {
-    background-color: #E74C3C;
+    background-color: #3498DB;
     }
     
     .page {
@@ -136,11 +136,11 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .page label.text-danger, .tab-view label.text-danger {
-    color: #d9534f;
+    color: #3498DB;
     }
     
     .page label.bg-danger, .tab-view label.bg-danger {
-    background-color: #d9534f;
+    background-color: #3498DB;
     }
     
     .page label.text-muted, .tab-view label.text-muted {
@@ -188,7 +188,7 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .btn[isEnabled=false] {
-    color: #E74C3C;
+    color: #3498DB;
     }
     
     .btn-rounded-sm {
@@ -224,11 +224,11 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .tab-view {
-    android-selected-tab-highlight-color: #E74C3C;
+    android-selected-tab-highlight-color: #3498DB;
     }
     
     .sidedrawer-header {
-    background-color: #E74C3C;
+    background-color: #3498DB;
     }
     
     .sidedrawer-header-brand {

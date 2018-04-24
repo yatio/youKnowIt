@@ -18,6 +18,7 @@
     "nativescript-sqlite": "^2.0.1",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-ui-calendar": "^3.5.2",
+    "nativescript-ui-listview": "^3.5.4",
     "nativescript-ui-sidedrawer": "^3.5.2",
     "tns-core-modules": "~3.4.0"
   },

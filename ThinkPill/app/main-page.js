@@ -83,7 +83,7 @@ exports.citaPage=function() {
 exports.addCita=function() {
     // console.log("Navigating");
     var navigationOptions={
-        moduleName:'pages/addCita/addCita'//,
+        moduleName:'pages/citasPage/pages/addCita/addCita'//,
         // context:{param1: "value1",
         //         param2: "value2"
         //         }

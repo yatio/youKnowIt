@@ -19,12 +19,9 @@
         </StackLayout>
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
-            <StackLayout orientation="Horizontal" horizontalAlignment="center">
-                <Button text="Citas" style="width:75;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
-                <Button text="Add" style="width:75;height:100; background-color: #3498DB" class="btn btn-primary" tap="addCita"/>
-            </StackLayout>
-                <!-- <Button text="addCita" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="addCita"/> -->
-                <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
+            <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+            <!-- <Button text="addCita" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="addCita"/> -->
+            <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
         </StackLayout>
     </StackLayout>
 

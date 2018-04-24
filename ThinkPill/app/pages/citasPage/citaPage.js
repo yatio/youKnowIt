@@ -19,7 +19,7 @@
 
 var view = require("ui/core/view");
 var drawer;
-
+var frameModule =require("ui/frame");
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
@@ -195,4 +195,27 @@ function onNavigatingTo(args) {
 
 exports.onNavigatingTo = onNavigatingTo;
 
+exports.addCita=function() {
+    // console.log("Navigating");
+    var navigationOptions={
+        moduleName:'pages/citasPage/pages/addCita/addCita'//,
+        // context:{param1: "value1",
+        //         param2: "value2"
+        //         }
+    }
+    
+    frameModule.topmost().navigate(navigationOptions);
+}
 
+
+exports.deleteCita=function() {
+    // console.log("Navigating");
+    var navigationOptions={
+        moduleName:'pages/citasPage/pages/deleteCita/deleteCita'//,
+        // context:{param1: "value1",
+        //         param2: "value2"
+        //         }
+    }
+    
+    frameModule.topmost().navigate(navigationOptions);
+}

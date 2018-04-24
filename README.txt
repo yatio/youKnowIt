@@ -12,3 +12,4 @@ tns plugin add nativescript-permissions
 
 
 tns plugin add nativescript-sqlite
+tns plugin add nativescript-drop-down
