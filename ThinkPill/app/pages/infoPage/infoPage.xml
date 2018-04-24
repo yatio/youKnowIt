@@ -2,13 +2,11 @@
 
     <ActionBar title="Medicinas Sugeridas" class="action-bar" />
 
-  
 <!-- <lv:RadListView id="listview" items="{{ items }}" class="list-group" pullToRefresh="true" 
 pullToRefreshInitiated="pullToRefreshInitiated" swipeActions="true"> -->
-<lv:RadListView id="listview" items="{{ items }}" class="list-group" pullToRefresh="true" 
-pullToRefreshInitiated="pullToRefreshInitiated">
+<lv:RadListView id="listview" items="{{ items }}" class="list-group" >
     <lv:RadListView.listViewLayout>
-        <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+        <lv:ListViewLinearLayout scrollDirection="Vertical" />
     </lv:RadListView.listViewLayout>
     <lv:RadListView.itemTemplate>
         <GridLayout class="list-group-item" rows="auto" columns="auto, *">
