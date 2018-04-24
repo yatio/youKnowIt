@@ -1,5 +1,51 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-  <StackLayout>
-    <Label text="This Is info Page" class="title"/>
-  </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" loaded="pageLoaded">
+
+    <ActionBar title="Medicinas Sugeridas" class="action-bar" />
+
+  
+<!-- <lv:RadListView id="listview" items="{{ items }}" class="list-group" pullToRefresh="true" 
+pullToRefreshInitiated="pullToRefreshInitiated" swipeActions="true"> -->
+<lv:RadListView id="listview" items="{{ items }}" class="list-group" pullToRefresh="true" 
+pullToRefreshInitiated="pullToRefreshInitiated">
+    <lv:RadListView.listViewLayout>
+        <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+    </lv:RadListView.listViewLayout>
+    <lv:RadListView.itemTemplate>
+        <GridLayout class="list-group-item" rows="auto" columns="auto, *">
+            <Image row="0" col="0" src="{{ itemImage }}" class="thumb img-rounded" />
+            <StackLayout row="0" col="1" >
+                <Label text="{{ itemName }}" class="list-group-item-heading" />
+                <Label text="{{ itemDesc }}" class="list-group-item-text" />
+            </StackLayout>
+        </GridLayout>
+    </lv:RadListView.itemTemplate>
+
+   <!-- <lv:RadListView.itemSwipeTemplate>
+    <GridLayout columns="auto, *, auto">
+        <StackLayout col="0" class="save-btn" tap="onLeftSwipe" orientation="horizontal">
+            <Label text="Save" verticalAlignment="center" horizontalAlignment="center"/>
+        </StackLayout>
+        <StackLayout col="2" class="delete-btn" tap="onRightSwipe" orientation="horizontal">
+            <Label text="Delete" verticalAlignment="center" horizontalAlignment="center" />
+        </StackLayout>
+    </GridLayout>
+</lv:RadListView.itemSwipeTemplate> -->
+</lv:RadListView>
+
+
+
+
+
+
+
+
+
+
+
 </Page>
+
+
+
+
+
+  

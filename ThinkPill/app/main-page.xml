@@ -10,12 +10,18 @@
 
     <StackLayout orientation="Vertical" >
 
-      <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" />
-      <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" />
+      <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" width="750px" height="350px"/>
+      <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" width="750px" height="350px" />
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
             <Button text="Pastillas" style="width:150;height:100; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
             <Button text="Mapa"   style="width:150;height:100; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+        </StackLayout>
+
+        
+         <StackLayout orientation="Horizontal" horizontalAlignment="center">
+                <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+                <Button text="Add" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="addCita"/>
         </StackLayout>
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
