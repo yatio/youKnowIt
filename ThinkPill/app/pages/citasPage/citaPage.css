@@ -140,7 +140,7 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .page label.bg-danger, .tab-view label.bg-danger {
-    background-color:#3498DB;
+    background-color: #3498DB;
     }
     
     .page label.text-muted, .tab-view label.text-muted {
@@ -224,11 +224,11 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .tab-view {
-    android-selected-tab-highlight-color:#3498DB;
+    android-selected-tab-highlight-color: #3498DB;
     }
     
     .sidedrawer-header {
-    background-color:#3498DB;
+    background-color: #3498DB;
     }
     
     .sidedrawer-header-brand {
