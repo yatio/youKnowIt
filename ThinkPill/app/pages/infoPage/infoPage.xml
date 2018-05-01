@@ -4,7 +4,7 @@
 
 <!-- <lv:RadListView id="listview" items="{{ items }}" class="list-group" pullToRefresh="true" 
 pullToRefreshInitiated="pullToRefreshInitiated" swipeActions="true"> -->
-<lv:RadListView id="listview" items="{{ items }}" class="list-group" >
+<lv:RadListView id="listview" items="{{ items }}" class="list-group">
     <lv:RadListView.listViewLayout>
         <lv:ListViewLinearLayout scrollDirection="Vertical" />
     </lv:RadListView.listViewLayout>
@@ -12,33 +12,12 @@ pullToRefreshInitiated="pullToRefreshInitiated" swipeActions="true"> -->
         <GridLayout class="list-group-item" rows="auto" columns="auto, *">
             <Image row="0" col="0" src="{{ itemImage }}" class="thumb img-rounded" />
             <StackLayout row="0" col="1" >
-                <Label text="{{ itemName }}" class="list-group-item-heading" />
-                <Label text="{{ itemDesc }}" class="list-group-item-text" />
+                <Button text="{{ itemName }} " class="list-group-item-heading" tap="cabezaPage"/>
+                <Label text=" {{ itemDesc }} " class="list-group-item-text" />
             </StackLayout>
         </GridLayout>
     </lv:RadListView.itemTemplate>
-
-   <!-- <lv:RadListView.itemSwipeTemplate>
-    <GridLayout columns="auto, *, auto">
-        <StackLayout col="0" class="save-btn" tap="onLeftSwipe" orientation="horizontal">
-            <Label text="Save" verticalAlignment="center" horizontalAlignment="center"/>
-        </StackLayout>
-        <StackLayout col="2" class="delete-btn" tap="onRightSwipe" orientation="horizontal">
-            <Label text="Delete" verticalAlignment="center" horizontalAlignment="center" />
-        </StackLayout>
-    </GridLayout>
-</lv:RadListView.itemSwipeTemplate> -->
 </lv:RadListView>
-
-
-
-
-
-
-
-
-
-
 
 </Page>
 

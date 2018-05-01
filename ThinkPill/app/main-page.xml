@@ -14,20 +14,20 @@
       <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" width="750px" height="350px" />
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
-            <Button text="Pastillas" style="width:150;height:100; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
-            <Button text="Mapa"   style="width:150;height:100; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+            <Button text="Alarma de Pastillas" style="width:175;height:150; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
+            <Button text="Farmacias Cercanas"   style="width:175;height:150; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
         </StackLayout>
 
         
-         <StackLayout orientation="Horizontal" horizontalAlignment="center">
+         <!-- <StackLayout orientation="Horizontal" horizontalAlignment="center">
                 <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
                 <Button text="Add" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="addCita"/>
-        </StackLayout>
+        </StackLayout> -->
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
-            <Button text="Citas" style="width:150;height:100; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+            <Button text="Calendario de Citas" style="width:175;height:150; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
             <!-- <Button text="addCita" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="addCita"/> -->
-            <Button text="Información" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
+            <Button text="Medicamentos Sugeridos" style="width:175;height:150; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
         </StackLayout>
     </StackLayout>
 
