@@ -22,7 +22,7 @@ var createViewModelNot = require("./deleteCitaPage-view-model").createViewModelN
 var LocalNotifications = require("nativescript-local-notifications");
 function onNavigatingTo(args) {
     var page = args.object;
-     
+    
 
     (new Sqlite("my.db")).then(db => {
         // db.execSQL("DROP TABLE 'citas';")
@@ -61,18 +61,6 @@ exports.pageLoaded = function(args) {
         {
             itemName: "Daft Punk",
             itemDesc: "Random Access Memories"
-        },
-        {
-            itemName: "Elbow",
-            itemDesc: "Build a Rocket Boys!"
-        },
-        {
-            itemName: "Elbow",
-            itemDesc: "Build a Rocket Boys!"
-        },
-        {
-            itemName: "Elbow",
-            itemDesc: "Build a Rocket Boys!"
         },
         {
             itemName: "Elbow",
