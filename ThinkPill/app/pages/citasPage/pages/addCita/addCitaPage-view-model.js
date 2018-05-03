@@ -53,25 +53,30 @@ var Sqlite = require("nativescript-sqlite");
 
 function createViewModel(database) {
     var viewModel = new Observable();
-    viewModel.titulo = "";
-    viewModel.dia = "";
-    viewModel.mes = "";
-    viewModel.year = "";
-    viewModel.hora = "";
-    viewModel.minutos = "";
-    
+    viewModel.titulo = "prueba";
+    viewModel.day = "01";
+    viewModel.month = "01";
+    viewModel.year = "2018";
+    viewModel.hora = "12";
+    viewModel.minutos = "00";
+    console.log("entro")
 
     viewModel.insert = function() {
         console.log("Entro aqui por lomenos");
-            var mes = this.mes;
-            console.log("MESES: " + mes);
+        console.log("viewModel.day: " + viewModel.day)
+        console.log("viewModel.month: " + viewModel.month)
+        console.log("viewModel.year: " + viewModel.year)
+        console.log("viewModel.hora: " + viewModel.hora)
+        console.log("viewModel.minutos: " + viewModel.minutos)
+            var month = viewModel.month;
+            console.log("MESES: " + month);
             // if (mes > 0) 
             //     mes = parseInt(mes) - 1;
             // else
             //     mes = 0;
 
-            console.log("MESES: " + mes);
-        database.execSQL("INSERT INTO Citas (titulo, dia, mes, year, hora, minutos) VALUES (?, ?, ?, ?, ?, ?)", [this.titulo ,this.dia, mes, this.year, this.hora, this.minutos ]).then(id => { 
+            console.log("MESES: " + month);
+        database.execSQL("INSERT INTO Citas (titulo, dia, mes, year, hora, minutos) VALUES (?, ?, ?, ?, ?, ?)", [this.titulo ,this.day, this.month, this.year, this.hora, this.minutos ]).then(id => { 
             console.log("INSERT RESULT", id);
         }, error => {
             console.log("INSERT ERROR", error);
