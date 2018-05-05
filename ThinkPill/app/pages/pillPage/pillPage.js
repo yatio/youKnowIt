@@ -56,28 +56,3 @@ exports.pageLoaded = function(args) {
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
-
-exports.addPill=function() {
-    // console.log("Navigating");
-    var navigationOptions={
-        moduleName:'pages/pillPage/pages/addPill/addPill'//,
-        // context:{param1: "value1",
-        //         param2: "value2"
-        //         }
-    }
-    
-    frameModule.topmost().navigate(navigationOptions);
-}
-
-
-exports.deletePill=function() {
-    // console.log("Navigating");
-    var navigationOptions={
-        moduleName:'pages/pillPage/pages/deletePill/deletePill'//,
-        // context:{param1: "value1",
-        //         param2: "value2"
-        //         }
-    }
-    
-    frameModule.topmost().navigate(navigationOptions);
-}
