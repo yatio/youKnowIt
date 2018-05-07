@@ -136,11 +136,11 @@ refer to http://docs.nativescript.org/ui/theme.
     }
     
     .page label.text-danger, .tab-view label.text-danger {
-    color: #d9534f;
+    color: #E74C3C;
     }
     
     .page label.bg-danger, .tab-view label.bg-danger {
-    background-color: #d9534f;
+    background-color: #E74C3C;
     }
     
     .page label.text-muted, .tab-view label.text-muted {

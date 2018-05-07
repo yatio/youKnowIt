@@ -17,8 +17,8 @@
 // exports.onNavigatingTo = onNavigatingTo;
 
 var Sqlite = require("nativescript-sqlite");
-var createViewModel = require("./deleteCitaPage-view-model").createViewModel;
-var createViewModelNot = require("./deleteCitaPage-view-model").createViewModelNot;
+var createViewModel = require("./deletePillPage-view-model").createViewModel;
+var createViewModelNot = require("./deletePillPage-view-model").createViewModelNot;
 var LocalNotifications = require("nativescript-local-notifications");
 var ObservableArray = require("data/observable-array").ObservableArray;
 function onNavigatingTo(args) {
@@ -27,7 +27,7 @@ function onNavigatingTo(args) {
 
     (new Sqlite("my.db")).then(db => {
         // db.execSQL("DROP TABLE 'citas';")
-        db.execSQL("CREATE TABLE IF NOT EXISTS Citas (id INTEGER PRIMARY KEY AUTOINCREMENT,titulo TEXT, dia INTEGER, mes INTEGER, year INTEGER, hora INTEGER, minutos INTEGER)").then(id => {
+        db.execSQL("CREATE TABLE IF NOT EXISTS Pills (id INTEGER PRIMARY KEY AUTOINCREMENT,titulo TEXT, dia INTEGER, mes INTEGER, year INTEGER, hora INTEGER, minutos INTEGER)").then(id => {
             page.bindingContext = createViewModel(db);
         }, error => {
             console.log("CREATE TABLE ERROR", error);
@@ -56,7 +56,7 @@ exports.pageLoaded = function(args) {
     var items = new ObservableArray([]);
     var enter = 0;
     (new Sqlite("my.db")).then(db => {
-        db.all("SELECT * FROM citas").then(rows => {
+        db.all("SELECT * FROM Pills").then(rows => {
             console.log("select");
 			for(var row in rows) {
                 var titulo = rows[row][1];
@@ -123,7 +123,7 @@ exports.pageLoaded = function(args) {
                         items.push(
                         {
                             IDCita: " ",
-                            nameCita: "No tienes ninguna cita apuntada",
+                            nameCita: "No tienes ningun medicamento apuntada",
                             dateCita: "",
                             timeCita: ""
                         }
@@ -162,6 +162,7 @@ exports.deleteCita=function(args) {
         message: "se borrara " + datasName,
         okButtonText: "Si",
         cancelButtonText: "No",
+
         }).then(function (result) {
             console.log("Results " + result);
             if(result == 1)
@@ -169,23 +170,11 @@ exports.deleteCita=function(args) {
                     // result argument is boolean
                     console.log("adentro " + result);
                     (new Sqlite("my.db")).then(db => {
-                        db.all("DELETE FROM citas where id=" + dataID)
+                        db.all("DELETE FROM Pills where id=" + dataID)
                             alert("Se borro: " + datasName);
                         });
                 }           
     });
         }else 
             alert("Esto es un mensage, no una cita");
-}
-
-function back() {
-    console.log("Navigating");
-    var navigationOptions={
-        moduleName:'pages/citasPage'//,
-        // context:{param1: "value1",
-        //         param2: "value2"
-        //         }
-    }
-    
-    frameModule.topmost().navigate(navigationOptions);
 }

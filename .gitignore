@@ -3,3 +3,4 @@ platforms/
 node_modules/
 .DS_Store
 ThinkPill\.DS_Store
+ThinkPill/app/pages/.DS_Store

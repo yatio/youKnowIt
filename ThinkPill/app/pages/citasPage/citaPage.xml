@@ -18,8 +18,8 @@
             <Button text="btn btn-outline" tap="" class="btn btn-primary btn-outline" /> -->
                     <Button text="Añadir Citas" class="sidedrawer-list-item-text" tap="addCita" />
                     <Button text="Borrar Citas" class="sidedrawer-list-item-text" tap="deleteCita" />
-                    <Button text="Editar Citas" class="sidedrawer-list-item-text" />
-                    <Button text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" />
+                    <!-- <Button text="Editar Citas" class="sidedrawer-list-item-text" />
+                    <Button text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" /> -->
                 </StackLayout>
             </StackLayout>
         </sd:RadSideDrawer.drawerContent>

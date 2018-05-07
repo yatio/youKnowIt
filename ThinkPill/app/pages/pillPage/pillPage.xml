@@ -1,9 +1,8 @@
-    <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer"  xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
 
-    <ActionBar title="Recordatorio de Medicamentos" class="action-bar" >
-        <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_preferences" ios.position="left" />
-    </ActionBar>
-
+<ActionBar title="Calendario de Citas" class="action-bar">
+    <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_preferences" ios.position="left" />
+</ActionBar>
 
     <sd:RadSideDrawer id="sideDrawer" drawerLocation="right" drawerTransition="RevealTransition">
 
@@ -14,10 +13,13 @@
                     <Label text="Ajustes" class="sidedrawer-header-brand" /> 
                 </StackLayout>
                 <StackLayout class="sidedrawer-content">
-                    <Button text="Añadir Citas" class="sidedrawer-list-item-text" />
-                    <Button text="Borrar Citas" class="sidedrawer-list-item-text" />
-                    <Button text="Editar Citas" class="sidedrawer-list-item-text" />
-                    <Button text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" />
+                    <!-- <Button text="btn" tap="" class="btn" /> -->
+            <!-- <Button text="btn btn-primary" tap="" class="btn btn-primary" />
+            <Button text="btn btn-outline" tap="" class="btn btn-primary btn-outline" /> -->
+                    <Button text="Añadir Citas" class="sidedrawer-list-item-text" tap="addCita" />
+                    <Button text="Borrar Citas" class="sidedrawer-list-item-text" tap="deleteCita" />
+                    <!-- <Button text="Editar Citas" class="sidedrawer-list-item-text" />
+                    <Button text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" /> -->
                 </StackLayout>
             </StackLayout>
         </sd:RadSideDrawer.drawerContent>
@@ -32,14 +34,6 @@
 
     </sd:RadSideDrawer>
         
+
 </Page>
-
-
-
-
-
-  
-
-        
-
 

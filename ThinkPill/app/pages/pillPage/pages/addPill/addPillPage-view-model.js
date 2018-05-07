@@ -72,7 +72,7 @@ function createViewModel(database) {
             console.log("MESES: " + month);
             if (viewModel.titulo !="")
                 {
-                    database.execSQL("INSERT INTO Citas (titulo, dia, mes, year, hora, minutos) VALUES (?, ?, ?, ?, ?, ?)", [this.titulo ,this.day, this.month, this.year, this.hora, this.minutos ]).then(id => { 
+                    database.execSQL("INSERT INTO Pills (titulo, dia, mes, year, hora, minutos) VALUES (?, ?, ?, ?, ?, ?)", [this.titulo ,this.day, this.month, this.year, this.hora, this.minutos ]).then(id => { 
                     console.log("INSERT RESULT", id);
                     }, error => {
                     console.log("INSERT ERROR", error);
@@ -92,7 +92,7 @@ function createViewModel(database) {
     }
 
     viewModel.select = function() {
-        database.all("SELECT * FROM citas").then(rows => {
+        database.all("SELECT * FROM Pills").then(rows => {
             for(var row in rows) {
                 console.log("RESULT", rows[row]);
             }
