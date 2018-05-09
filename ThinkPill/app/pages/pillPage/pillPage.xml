@@ -1,6 +1,6 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" xmlns:calendar="nativescript-ui-calendar" loaded="pageLoaded">
 
-<ActionBar title="Calendario de Citas" class="action-bar">
+<ActionBar title="Recordatorio de Medicamentos" class="action-bar">
     <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_preferences" ios.position="left" />
 </ActionBar>
 
@@ -16,8 +16,8 @@
                     <!-- <Button text="btn" tap="" class="btn" /> -->
             <!-- <Button text="btn btn-primary" tap="" class="btn btn-primary" />
             <Button text="btn btn-outline" tap="" class="btn btn-primary btn-outline" /> -->
-                    <Button text="Añadir Citas" class="sidedrawer-list-item-text" tap="addCita" />
-                    <Button text="Borrar Citas" class="sidedrawer-list-item-text" tap="deleteCita" />
+                    <Button text="Añadir Recordatorio" class="sidedrawer-list-item-text" tap="addPill" />
+                    <Button text="Borrar Recordatorio" class="sidedrawer-list-item-text" tap="deletePill" />
                     <!-- <Button text="Editar Citas" class="sidedrawer-list-item-text" />
                     <Button text="Regresar" class="sidedrawer-list-item-text" href="https://www.w3schools.com/jsref/jsref_link.asp" /> -->
                 </StackLayout>
@@ -37,3 +37,8 @@
 
 </Page>
 
+
+
+       
+
+ 

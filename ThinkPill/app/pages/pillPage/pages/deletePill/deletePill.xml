@@ -22,22 +22,22 @@
 
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" loaded="pageLoaded">
 
-    <ActionBar title="Borar Citas" class="action-bar" />
+    <ActionBar title="Borrar Citas" class="action-bar" />
 
      <lv:RadListView id="listview" visibility="visible" items="{{ items }}" class="list-group">
         <lv:RadListView.listViewLayout>
             <lv:ListViewLinearLayout scrollDirection="Vertical"/>
         </lv:RadListView.listViewLayout>
         <lv:RadListView.itemTemplate>
-           <GridLayout class="list-group-item" rows="auto" columns="auto, *" tap="deleteCita">
+           <GridLayout class="list-group-item" rows="auto" columns="auto, *" tap="deletePill">
                 <!-- <StackLayout orientation="Horizontal" horizontalAlignment="left" class="list-group-item"> -->
                     <!-- <Label  text="{{ nameCita }}" class="list-group-item-heading"  /> -->
                     <!-- //<StackLayout orientation="Horizontal" horizontalAlignment="left" class="list-group-item"> -->
-                <Label id="CitaName" text="{{ nameCita }}" class="list-group-item-heading" row="0" col="0"  />
-                <Label id="CitaID" text="{{ IDCita }}" visibility="hidden" class="list-group-item-heading"  />   
+                <Label id="PillName" text="{{ namePill }}" class="list-group-item-heading" row="0" col="0"  />
+                <Label id="PillID" text="{{ IDPill }}" visibility="hidden" class="list-group-item-heading"  />   
                 <StackLayout row="0" col="1" class="list-group-item"> 
-                    <Label id="dateCita" text="{{ dateCita }}" textWrap="true" class="list-group-item-text"/>
-                    <Label text="{{ timeCita }}" textWrap="true" class="list-group-item-text"/> 
+                    <Label id="datePill" text="{{ datePill }}" textWrap="true" class="list-group-item-text"/>
+                    <Label text="{{ timePill }}" textWrap="true" class="list-group-item-text"/> 
                     <!-- <Label id="Label1" text="No tienes ninguna cita apuntada" visibility=""/>  --> 
                 </StackLayout> 
                 

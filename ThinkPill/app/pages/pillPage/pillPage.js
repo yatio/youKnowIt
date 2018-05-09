@@ -47,7 +47,7 @@ exports.pageLoaded = function(args) {
 		
 		    (new Sqlite("my.db")).then(db => {
         // db.execSQL("DROP TABLE 'Citas';")
-        db.all("SELECT * FROM citas").then(rows => {
+        db.all("SELECT * FROM pills").then(rows => {
 			for(var row in rows) {
 				// console.log("id: ", rows[row][0]);
 				// console.log("titulo: ", rows[row][1]);
@@ -195,7 +195,7 @@ function onNavigatingTo(args) {
 
 exports.onNavigatingTo = onNavigatingTo;
 
-exports.addCita=function() {
+exports.addPill=function() {
     // // console.log("Navigating");
     var navigationOptions={
         moduleName:'pages/pillPage/pages/addPill/addPill'//,
@@ -208,7 +208,7 @@ exports.addCita=function() {
 }
 
 
-exports.deleteCita=function() {
+exports.deletePill=function() {
     // // console.log("Navigating");
     var navigationOptions={
         moduleName:'pages/pillPage/pages/deletePill/deletePill'//,

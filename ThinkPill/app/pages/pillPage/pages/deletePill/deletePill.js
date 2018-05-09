@@ -109,10 +109,10 @@ exports.pageLoaded = function(args) {
                 console.log("items");
                 items.push(
                         {
-                            IDCita: rows[row][0],
-                            nameCita: titulo + " ",
-                            dateCita: day + " de " + month + " de " + year,
-                            timeCita: " a las " + hora + ":" + minutos
+                            IDPill: rows[row][0],
+                            namePill: titulo + " ",
+                            datePill: day + " de " + month + " de " + year,
+                            timePill: " a las " + hora + ":" + minutos
                         }
                     )
                      pageData.set("items", items);
@@ -122,10 +122,10 @@ exports.pageLoaded = function(args) {
                     {
                         items.push(
                         {
-                            IDCita: " ",
-                            nameCita: "No tienes ningun medicamento apuntada",
-                            dateCita: "",
-                            timeCita: ""
+                            IDPill: " ",
+                            namePill: "No tienes ningun medicamento apuntado",
+                            datePill: "",
+                            timePill: ""
                         }
                     )
                      pageData.set("items", items);
@@ -138,16 +138,16 @@ exports.pageLoaded = function(args) {
 
 var view = require("ui/core/view");
 var frameModule =require("ui/frame");
-exports.deleteCita=function(args) {
+exports.deletePill=function(args) {
     console.log("entro aqui");
 //    var page = args.object;
 //     page.bindingContext = pageData;
     // var items = new ObservableArray([]);
     var sender = args.object;
     var parent = sender.parent;
-    var idCitaDel = view.getViewById(parent,"CitaID");
+    var idCitaDel = view.getViewById(parent,"PillID");
     var dataID = idCitaDel.text;
-    var nameCitaDel = view.getViewById(parent,"CitaName");
+    var nameCitaDel = view.getViewById(parent,"PillName");
     var datasName = nameCitaDel.text;
     // console.log("nameCitaDel:" + nameCitaDel);
     // console.log("nameCitaDel:" + nameCitaDel.text);
@@ -176,5 +176,19 @@ exports.deleteCita=function(args) {
                 }           
     });
         }else 
-            alert("Esto es un mensage, no una cita");
+            alert("Esto es un mensaje, no una pastilla");
 }
+
+
+function back() {
+    console.log("Navigating");
+    var navigationOptions={
+        moduleName:'pages/pillPage'//,
+        // context:{param1: "value1",
+        //         param2: "value2"
+        //         }
+    }
+    
+    frameModule.topmost().navigate(navigationOptions);
+}
+

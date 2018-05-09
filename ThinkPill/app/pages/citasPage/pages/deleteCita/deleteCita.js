@@ -175,7 +175,7 @@ exports.deleteCita=function(args) {
                 }           
     });
         }else 
-            alert("Esto es un mensage, no una cita");
+            alert("Esto es un mensaje, no una cita");
 }
 
 function back() {

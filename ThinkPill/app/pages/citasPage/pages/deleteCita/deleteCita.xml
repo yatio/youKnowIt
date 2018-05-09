@@ -22,7 +22,7 @@
 
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" loaded="pageLoaded">
 
-    <ActionBar title="Borar Citas" class="action-bar" />
+    <ActionBar title="Borrar Citas" class="action-bar" />
 
      <lv:RadListView id="listview" visibility="visible" items="{{ items }}" class="list-group">
         <lv:RadListView.listViewLayout>
