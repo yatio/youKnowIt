@@ -2,7 +2,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
 
     <Page.actionBar>
-        <ActionBar title="Menu" icon="" class="action-bar">
+        <ActionBar title="Home" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
 
@@ -10,12 +10,12 @@
 
     <StackLayout orientation="Vertical" >
 
-      <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" width="750px" height="350px"/>
-      <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" width="750px" height="350px" />
+      <Image src="~/images/logo2.png" stretch="aspectFit"  horizontalAlignment="center" verticalAlignment="top" width="500px" height="300px"/>
+      <Image src="~/images/ogol2.png" stretch="aspectFit"  verticalAlignment="top" width="500px" height="250px" />
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
-            <Button text="Alarma de Pastillas" style="width:175;height:150; background-color:#E74C3C  "  class="btn btn-primary" tap="pillPage" />
-            <Button text="Farmacias Cercanas"   style="width:175;height:150; background-color: #2ECC71  "  class="btn btn-primary" tap="mapPage"/>
+            <Button text="Alarma de Pastillas" style="width:175;height:175; background-color: #E74C3C; font-size: 20"  class="btn btn-primary" tap="pillPage" />
+            <Button text="Farmacias Cercanas"   style="width:175;height:175; background-color: #2ECC71; font-size: 20"  class="btn btn-primary" tap="mapPage"/>
         </StackLayout>
 
         
@@ -25,9 +25,9 @@
         </StackLayout> -->
 
         <StackLayout orientation="Horizontal" horizontalAlignment="center">
-            <Button text="Calendario de Citas" style="width:175;height:150; background-color: #3498DB" class="btn btn-primary" tap="citaPage" />
+            <Button text="Calendario de Citas" style="width:175;height:175; background-color: #3498DB; font-size: 20" class="btn btn-primary" tap="citaPage" />
             <!-- <Button text="addCita" style="width:150;height:100; background-color: #F39C12" class="btn btn-primary" tap="addCita"/> -->
-            <Button text="Medicamentos Sugeridos" style="width:175;height:150; background-color: #F39C12" class="btn btn-primary" tap="infoPage"/> 
+            <Button text="Medicamentos Sugeridos" style="width:175;height:175; background-color: #F39C12; font-size: 20" class="btn btn-primary" tap="infoPage"/> 
         </StackLayout>
     </StackLayout>
 
